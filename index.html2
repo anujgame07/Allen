@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALLEN Coaching Classes | Premium Learning</title>
+<meta name="description" content="Premium coaching website for JEE, MHT-CET and Foundation students.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+:root{--red:#d90435;--red2:#ff3157;--navy:#071a38;--blue:#0d4aa5;--ink:#10213f;--muted:#687a93;--bg:#f7f9fc;--white:#fff;--line:#e6ebf2}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--bg);overflow-x:hidden}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+.top{background:var(--navy);color:#dce8ff;font-size:12px;padding:8px 0}.topin{display:flex;justify-content:space-between;gap:15px}
+nav{position:sticky;top:0;z-index:100;background:#fffdfdf2;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;font-weight:950}.mark{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,var(--red),#ff6480);color:#fff;display:grid;place-items:center;font-weight:900;font-size:20px;box-shadow:0 10px 24px #d9043530}.brand span{font-size:18px}.brand small{display:block;color:#68768a;font-size:9px;letter-spacing:1.3px;margin-top:2px}
+.links{display:flex;gap:25px;font-size:13px;font-weight:800}.links a{transition:.2s}.links a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:13px;padding:13px 19px;background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;font-weight:900;box-shadow:0 12px 30px #d9043533;cursor:pointer;transition:.25s}.btn:hover{transform:translateY(-3px);box-shadow:0 17px 34px #d9043540}.ghost{background:#fff;color:var(--red);border:1px solid #f0c5cf;box-shadow:none}
+.hero{position:relative;min-height:690px;padding:92px 0 85px;background:radial-gradient(circle at 75% 15%,#ffdce5,transparent 24%),linear-gradient(135deg,#fff,#eef4fb);overflow:hidden}
+.hero:after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;right:-190px;bottom:-190px;background:#d7e8ff88;filter:blur(3px)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:2}
+.kicker{display:inline-flex;gap:8px;align-items:center;padding:8px 13px;background:#fff;border:1px solid #f0d2da;border-radius:99px;color:#b6002d;font-weight:900;font-size:12px;margin-bottom:20px;box-shadow:0 7px 20px #253d5a0b}
+h1{font-size:clamp(46px,6vw,78px);line-height:.98;letter-spacing:-3.8px;margin-bottom:22px}.red{color:var(--red)}.gradient{background:linear-gradient(90deg,#0c469c,#15a9d1);-webkit-background-clip:text;color:transparent}
+.lead{max-width:600px;font-size:17px;line-height:1.8;color:var(--muted);margin-bottom:28px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-photo{height:480px;border:7px solid #fff;border-radius:34px;overflow:hidden;position:relative;box-shadow:0 35px 90px #14365a33;transform:rotate(1deg);animation:float 6s ease-in-out infinite}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center}
+.photo-tag{position:absolute;left:20px;right:20px;bottom:20px;padding:18px;border-radius:18px;background:#071a38dd;color:#fff;backdrop-filter:blur(10px)}.photo-tag b{display:block;font-size:20px}.photo-tag span{font-size:12px;color:#d8e4fa}
+.trust{background:#fff;border-bottom:1px solid var(--line)}.trustgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:0}.trustitem{padding:25px 18px;border-right:1px solid var(--line);text-align:center}.trustitem:last-child{border:0}.trustitem .ico{font-size:24px}.trustitem b{display:block;font-size:13px;margin:5px 0}.trustitem span{font-size:11px;color:var(--muted)}
+section{padding:90px 0}.section-head{max-width:720px;margin:0 auto 44px;text-align:center}.eyebrow{color:var(--red);font-size:11px;font-weight:900;letter-spacing:1.8px;text-transform:uppercase}.section-head h2{font-size:40px;letter-spacing:-1.5px;margin:8px 0 10px}.section-head p{color:var(--muted);line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 12px 40px #21466d0d;transition:.3s;position:relative;overflow:hidden}.card:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,var(--red),#ff8a9f);transform:scaleX(0);transform-origin:left;transition:.3s}.card:hover{transform:translateY(-8px);box-shadow:0 25px 55px #21466d18}.card:hover:before{transform:scaleX(1)}.course{min-height:220px}.course .icon{font-size:35px}.course h3{font-size:21px;margin:14px 0 8px}.course p{color:var(--muted);font-size:14px;line-height:1.7}.learn{display:inline-block;margin-top:17px;color:var(--red);font-size:13px;font-weight:900}
+.dark{background:var(--navy);color:#fff}.dark .section-head p{color:#b9c8df}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.stat{padding:25px;border:1px solid #ffffff16;border-radius:20px;background:#ffffff08;text-align:center}.stat b{font-size:37px;display:block}.stat span{font-size:12px;color:#b9c8df}
+.result-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:25px}.result-main{border-radius:28px;padding:38px;background:linear-gradient(145deg,#071a38,#123e7f);color:#fff;min-height:310px}.result-main h3{font-size:28px;margin-bottom:8px}.result-main p{color:#bfd0eb;font-size:14px;line-height:1.7}.resultnums{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}.resultnums b{font-size:27px;display:block}.resultnums span{font-size:11px;color:#bfd0eb}.student{border:1px solid var(--line);background:#fff;border-radius:28px;padding:28px;display:flex;align-items:center;gap:20px}.avatar{width:82px;height:82px;border-radius:20px;background:linear-gradient(135deg,#dce8fb,#f8d9e0);display:grid;place-items:center;font-size:32px}.student h3{margin-bottom:5px}.student p{color:var(--muted);font-size:13px;line-height:1.6}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.aboutimg{height:430px;border-radius:28px;overflow:hidden;box-shadow:0 25px 65px #1e426d22}.aboutimg img{width:100%;height:100%;object-fit:cover}.abouttext h2{font-size:40px;letter-spacing:-1.5px;margin:8px 0 16px}.abouttext>p{color:var(--muted);line-height:1.8;font-size:15px}.checks{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:24px 0}.check{font-size:13px;font-weight:800}.check span{color:var(--red);margin-right:6px}
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.quote{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px}.stars{color:#e9a600;letter-spacing:3px}.quote p{font-size:14px;color:#657790;line-height:1.75;margin:14px 0}.quote b{font-size:13px}
+.cta{background:linear-gradient(135deg,#fff0f4,#eef6ff)}.formbox{max-width:850px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:30px;padding:45px;box-shadow:0 25px 65px #21466d13;text-align:center}form{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:25px}input,select,textarea{width:100%;padding:14px 15px;border:1px solid #dce5ef;border-radius:11px;font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:#e46a84;box-shadow:0 0 0 4px #d9043510}textarea{grid-column:1/-1;min-height:110px}.full{grid-column:1/-1}
+footer{background:#05162f;color:#bfcce0;padding:50px 0 20px}.footergrid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:35px}.footergrid h4{color:#fff;margin-bottom:13px}.footergrid a{display:block;font-size:13px;margin:9px 0}.footergrid a:hover{color:#fff}.bottom{border-top:1px solid #ffffff18;margin-top:35px;padding-top:18px;font-size:11px;display:flex;justify-content:space-between}
+.reveal{opacity:0;transform:translateY(25px);transition:.7s}.reveal.show{opacity:1;transform:none}
+@keyframes float{50%{transform:rotate(-1deg) translateY(-12px)}}@media(max-width:850px){.links{display:none}.grid,.about,.result-grid{grid-template-columns:1fr}.hero{padding-top:75px}.hero-photo{height:390px}.trustgrid{grid-template-columns:1fr 1fr}.trustitem:nth-child(odd){border-right:1px solid var(--line)}.trustitem:nth-child(n+3){border-top:1px solid var(--line)}.cards,.testimonials{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.footergrid{grid-template-columns:1fr 1fr}form{grid-template-columns:1fr}textarea,.full{grid-column:auto}.bottom{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="container topin"><span>Admissions Open • JEE Main & Advanced • MHT-CET • Foundation</span><span>Learn Today • Lead Tomorrow</span></div></div>
+<nav><div class="container nav">
+<a class="brand" href="#"><div class="mark">AC</div><div><span>ALLEN COACHING CLASSES</span><small>EXCELLENCE • GUIDANCE • RESULTS</small></div></a>
+<div class="links"><a href="#courses">Courses</a><a href="#results">Results</a><a href="#about">About</a><a href="#faculty">Why Us</a><a href="#admission">Admission</a></div>
+<a class="btn" href="#admission">Apply Now →</a>
+</div></nav>
+
+<header class="hero"><div class="container grid">
+<div class="reveal"><div class="kicker">✦ Premium Learning Experience</div>
+<h1>Your Dream.<br><span class="red">Our Mission.</span></h1>
+<p class="lead">Expert guidance, smart learning and a focused environment designed to help every student prepare with confidence.</p>
+<div class="actions"><a class="btn" href="#courses">Explore Courses →</a><a class="btn ghost" href="#admission">Book Counselling</a></div></div>
+<div class="hero-photo"><img src="centre-photo.jpg" alt="ALLEN coaching centre building"><div class="photo-tag"><b>Success Starts Here.</b><span>Our Centre • A focused space for learning and growth</span></div></div>
+</div></header>
+
+<div class="trust"><div class="container trustgrid">
+<div class="trustitem"><div class="ico">🏆</div><b>Proven Results</b><span>Performance focused</span></div>
+<div class="trustitem"><div class="ico">👨‍🏫</div><b>Expert Faculty</b><span>Dedicated guidance</span></div>
+<div class="trustitem"><div class="ico">📖</div><b>Study Material</b><span>Structured resources</span></div>
+<div class="trustitem"><div class="ico">💻</div><b>Smart Learning</b><span>Modern approach</span></div>
+<div class="trustitem"><div class="ico">🎧</div><b>Student Support</b><span>Every step matters</span></div>
+</div></div>
+
+<section id="courses"><div class="container"><div class="section-head"><div class="eyebrow">Our Programs</div><h2>Courses Built For Your Goal</h2><p>Choose a focused preparation path and turn consistent effort into confidence.</p></div>
+<div class="cards">
+<div class="card course reveal"><div class="icon">🎯</div><h3>JEE Main + Advanced</h3><p>Deep concepts, challenging practice, mock tests and strategic preparation.</p><a class="learn" href="#admission">Know More →</a></div>
+<div class="card course reveal"><div class="icon">⚡</div><h3>MHT-CET</h3><p>Exam-focused PCM preparation with structured practice and performance tracking.</p><a class="learn" href="#admission">Know More →</a></div>
+<div class="card course reveal"><div class="icon">🌱</div><h3>Foundation</h3><p>Build strong fundamentals and develop competitive-exam readiness from an early stage.</p><a class="learn" href="#admission">Know More →</a></div>
+</div></div></section>
+
+<section class="dark" id="results"><div class="container"><div class="section-head"><div class="eyebrow" style="color:#ff6d8b">Our Results</div><h2>Consistent Success, Year After Year</h2><p>Replace the sample figures below with your institute's verified results.</p></div>
+<div class="result-grid"><div class="result-main reveal"><h3>Performance That Inspires</h3><p>A strong preparation system combines concepts, practice, tests and consistent improvement.</p><div class="resultnums"><div><b>50+</b><span>Top selections</span></div><div><b>1000+</b><span>JEE selections</span></div><div><b>2000+</b><span>CET selections</span></div></div><a class="btn" href="#admission">View Results →</a></div>
+<div class="student reveal"><div class="avatar">🎓</div><div><div class="stars">★★★★★</div><h3>Student Achievement</h3><p>“Focused practice and regular tests helped me become more confident in my preparation.”</p><b>— Sample Student</b></div></div></div>
+</div></section>
+
+<section id="about"><div class="container about"><div class="aboutimg reveal"><img src="centre-photo.jpg" alt="Coaching centre"></div><div class="abouttext reveal"><div class="eyebrow">About Our Centre</div><h2>Learn In An Environment Built For Focus.</h2><p>We aim to create a professional, motivating and student-first learning experience with structured preparation and personal guidance.</p><div class="checks"><div class="check"><span>✓</span> Expert Guidance</div><div class="check"><span>✓</span> Regular Tests</div><div class="check"><span>✓</span> Doubt Support</div><div class="check"><span>✓</span> Smart Resources</div></div><a class="btn" href="#admission">Know More →</a></div></div></section>
+
+<section id="faculty" style="padding-top:20px"><div class="container"><div class="section-head"><div class="eyebrow">Why Choose Us</div><h2>A Better Way To Prepare</h2><p>Everything students need to stay focused, consistent and motivated.</p></div><div class="cards">
+<div class="card reveal"><div class="icon">👨‍🏫</div><h3>Expert Faculty</h3><p>Clear teaching and practical problem-solving support.</p></div>
+<div class="card reveal"><div class="icon">📊</div><h3>Personal Attention</h3><p>Regular evaluation to identify gaps and improve step by step.</p></div>
+<div class="card reveal"><div class="icon">🚀</div><h3>Result-Oriented</h3><p>A structured routine designed around competitive-exam performance.</p></div>
+</div></div></section>
+
+<section><div class="container"><div class="section-head"><div class="eyebrow">Student Voice</div><h2>What Students Say</h2></div><div class="testimonials">
+<div class="quote reveal"><div class="stars">★★★★★</div><p>“The structured preparation made studying feel more organized and focused.”</p><b>Sample Student • JEE</b></div>
+<div class="quote reveal"><div class="stars">★★★★★</div><p>“Regular practice and tests helped me understand where I needed to improve.”</p><b>Sample Student • MHT-CET</b></div>
+<div class="quote reveal"><div class="stars">★★★★★</div><p>“The learning environment keeps me motivated to stay consistent.”</p><b>Sample Student • Foundation</b></div>
+</div></div></section>
+
+<section class="cta" id="admission"><div class="container"><div class="formbox"><div class="eyebrow">Admissions</div><h2 style="font-size:38px;margin:8px 0">Get Admission Guidance</h2><p style="color:var(--muted)">Fill in your details and our counselling team can contact you.</p>
+<form onsubmit="event.preventDefault();alert('Thank you! Your enquiry has been received.');"><input required placeholder="Full Name"><input required type="tel" placeholder="Mobile Number"><select required><option value="">Select Course</option><option>JEE Main + Advanced</option><option>MHT-CET</option><option>Foundation</option></select><input required placeholder="Class"><textarea placeholder="Message (Optional)"></textarea><button class="btn full" type="submit">Submit Enquiry →</button></form></div></div></section>
+
+<footer><div class="container"><div class="footergrid"><div><a class="brand" href="#"><div class="mark">AC</div><div><span style="color:#fff">ALLEN COACHING</span><small style="color:#91a7c6">DREAM • PREPARE • ACHIEVE</small></div></a><p style="font-size:12px;line-height:1.7;margin-top:16px">Professional coaching for focused learners.</p></div><div><h4>Quick Links</h4><a href="#courses">Courses</a><a href="#results">Results</a><a href="#about">About Us</a><a href="#admission">Admission</a></div><div><h4>Contact</h4><a href="#">📞 +91 XXXXX XXXXX</a><a href="#">✉️ admissions@example.com</a><a href="#">📍 Your Centre Address</a></div><div><h4>Follow Us</h4><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">Facebook</a></div></div><div class="bottom"><span>© 2026 Allen Coaching Classes. All rights reserved.</span><span>Privacy • Terms</span></div></div></footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>observer.observe(x));
+</script>
+</body>
+</html>
